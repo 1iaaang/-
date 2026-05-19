@@ -12,7 +12,8 @@ st.markdown("""
 html,body,[class*="css"]{font-family:'Noto Sans TC',sans-serif;}
 .stApp{background:#f5f0e8;}
 [data-testid="stSidebar"]{background:#2c2c2c!important;}
-[data-testid="stSidebar"] *{color:#f5f0e8!important;}
+[data-testid="stSidebar"] * { color: #f5f0e8 !important; }
+[data-testid="stSidebar"] input { color: #1a1a1a !important; background: #ffffff !important; }
 h1{color:#1a1a1a!important;font-weight:900!important;letter-spacing:-1px;}
 h2{color:#1a1a1a!important;font-weight:700!important;}
 h3{color:#333!important;font-weight:700!important;}
@@ -169,10 +170,14 @@ with tabs[0]:
     # Basic info
     col1, col2 = st.columns([3, 2])
     with col1:
-        new_name   = st.text_input("課程名稱", placeholder="例：國文、數學、英文…", key=f"nm_{r}")
+        course_options = ["自行輸入…","國文","英語","數學","生物","化學","物理","地科","歷史","地理","公民","體育","美術"]
+        selected_course = st.selectbox("課程名稱", options=course_options, key=f"sel_{r}")
+        if selected_course == "自行輸入…":
+            new_name = st.text_input("輸入課程名稱", placeholder="請輸入課程名稱", key=f"nm_{r}")
+        else:
+            new_name = selected_course
     with col2:
         new_absent = st.number_input("已缺席節數（累計）", min_value=0, value=0, key=f"ab_{r}")
-
     # Fix #4: optional custom limit
     col3, col4 = st.columns([2, 3])
     with col3:
