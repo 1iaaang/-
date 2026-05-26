@@ -147,7 +147,7 @@ with st.sidebar:
 # ══════════════════════════════════════════════════════════════════════════════
 st.markdown("""
 <div class="hero">
-  <h1 style="color:#f5f0e8;margin:0;font-size:2.2rem;">📚 出席預警計算系統</h1>
+  <h1 style="color:#f5f0e8;margin:0;font-size:2.2rem;">🏫 出席預警計算系統</h1>
   <p style="color:#aaa;margin:8px 0 0 0;font-size:1rem;">
     教育部規定：每科缺課不得超過學期總節數的
     <strong style="color:#d4a843;">1/3</strong>，
