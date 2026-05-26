@@ -14,10 +14,9 @@ html,body,[class*="css"]{font-family:'Noto Sans TC',sans-serif;}
 [data-testid="stSidebar"]{background:#2c2c2c!important;}
 [data-testid="stSidebar"] * { color: #f5f0e8 !important; }
 [data-testid="stSidebar"] input { color: #1a1a1a !important; background: #ffffff !important; }
-h1{color:#1a1a1a!important;font-weight:900!important;letter-spacing:-1px;}
-h2{color:#1a1a1a!important;font-weight:700!important;}
-h3{color:#333!important;font-weight:700!important;}
-
+h1{color:#f5f0e8!important;font-weight:900!important;letter-spacing:-1px;}
+h2{color:#f5f0e8!important;font-weight:700!important;}
+h3{color:#f5f0e8!important;font-weight:700!important;}
 .card{background:white;border-radius:16px;padding:20px;margin-bottom:14px;
       border:2px solid #e8e0d0;box-shadow:4px 4px 0 #1a1a1a;}
 .card-danger {background:#fff5f5;border-color:#e53935;box-shadow:4px 4px 0 #e53935;}
