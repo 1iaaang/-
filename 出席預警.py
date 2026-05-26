@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import date, timedelta
 
 # ── Page config ───────────────────────────────────────────────────────────────
-st.set_page_config(page_title="出席預警計算系統", page_icon="📅", layout="wide")
+st.set_page_config(page_title="出席預警計算系統", page_icon="🏫", layout="wide")
 
 # ── CSS ───────────────────────────────────────────────────────────────────────
 st.markdown("""
